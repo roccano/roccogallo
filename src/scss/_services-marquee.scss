@@ -1,0 +1,65 @@
+@use 'mixins' as *;
+
+.services-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+
+  &__track {
+    display: flex;
+    width: max-content;
+    animation: services-marquee 22s linear infinite;
+
+    @include can-hover {
+      &:hover { animation-play-state: paused; }
+    }
+
+    @include reduced-motion { animation: none; }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-right: 28px;
+    flex-shrink: 0;
+    font-size: var(--fs-2);
+
+    @include tablet-up {
+      font-size: var(--fs-3);
+      gap: 36px;
+      padding-right: 36px;
+    }
+  }
+
+  &__dot {
+    background: linear-gradient(90deg, #ff8efe, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 0.85em;
+    flex-shrink: 0;
+  }
+
+  span:not(.services-marquee__dot) {
+    background: linear-gradient(90deg, #000 60%, #0015ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+  }
+}
+
+@keyframes services-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
