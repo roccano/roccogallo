@@ -40,13 +40,14 @@
         <span class="bio font-authentic">
           <div class="bio__text">
             <span class="bio__spacer"></span><span class="bio__spacer"></span><span class="bio__spacer"></span>
-            Creative developer based in <span class="bio__city font-jabin">Milano</span>.
-            I'm building immersive digital experiences at
+            <span data-i18n="bio-intro">Creative developer based in</span> <span class="bio__city font-jabin">Milano</span>.
+            <span data-i18n="bio-mid">I'm building immersive digital experiences at</span>
             <a href="https://websolute.com/" target="_blank" rel="noopener noreferrer" class="link-hover">Websolute</a>.
-            I like creating things that live between design and code. I usually goes by
+            <span data-i18n="bio-end">I like creating things that live between design and code. I usually goes by</span>
             <span class="font-redaction font-italic">roccano</span>.
           </div>
         </span>
+
 
       
       </div>
@@ -64,7 +65,7 @@
     <!-- ── WEBSITES SECTION ── -->
     <div class="websites-wrap">
 
-      <div class="section-title font-script">websites</div>
+      <div class="section-title font-script" data-i18n="section-websites">websites</div>
 
       <!-- Project 1 — video left, text right (row-reverse) -->
       <div class="project-row project-row--reverse">
@@ -80,7 +81,7 @@
           <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://dececco.com/">
             De Cecco
           </a>
-          <div class="project-row__desc font-authentic">
+          <div class="project-row__desc font-authentic" data-i18n="desc-dececco">
             Institutional website redesign. The product becomes both starting point and destination, concentrating the brand's entire narrative and value system in a single, continuous experience.
           </div>
         </div>
@@ -100,7 +101,7 @@
           <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://alerion.it/">
             Alerion
           </a>
-          <div class="project-row__desc font-authentic">
+          <div class="project-row__desc font-authentic" data-i18n="desc-alerion">
             A new digital identity for a leading Italian private aviation company. Built to surface information clearly, reinforce content credibility, and put the projects front and center.
           </div>
         </div>
@@ -112,7 +113,7 @@
           <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://www.oasy.com/it/">
             Oasy
           </a>
-          <div class="project-row__desc font-authentic">
+          <div class="project-row__desc font-authentic" data-i18n="desc-oasy">
             Frontend development for the new website of an Italian petfood brand. Product-focused layouts with smooth scroll interactions and refined responsive design.
           </div>
         </div>
@@ -123,7 +124,7 @@
             <a target="_blank" rel="noreferrer" href="https://circolino-rimini.vercel.app/" class="project-row__title link-underline link-underline--white">
               circolino-rimini
             </a>
-            <div class="project-row__desc project-row__desc--centered">
+            <div class="project-row__desc project-row__desc--centered" data-i18n="desc-circolino">
               Restaurant website with immersive video hero, shader-based scroll effects. Sub-2s load time.
             </div>
           </div>
@@ -131,14 +132,14 @@
           <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
             roccano.it
           </a>
-          <div class="project-row__desc">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
+          <div class="project-row__desc" data-i18n="desc-roccano">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
 
 
           <div class="project-row__box project-row__box--orange">
             <a target="_blank" rel="noreferrer" href="https://jimmis.vercel.app/" class="project-row__title link-underline link-underline--white">
               Jimmis
             </a>
-            <div class="project-row__desc project-row__desc--centered">
+            <div class="project-row__desc project-row__desc--centered" data-i18n="desc-jimmis">
               Immersive website for a burger restaurant in Rimini. Full-screen video hero and scroll-driven animations.
             </div>
             <div class="project-row__image-wrap">
@@ -155,7 +156,7 @@
           <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
             roccano.it
           </a>
-          <div class="project-row__desc">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
+          <div class="project-row__desc" data-i18n="desc-roccano">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
           <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
             WEBSITE
           </a>
@@ -167,7 +168,7 @@
     <!-- ── CONTACT SECTION ── -->
     <div class="contact-wrap">
       <section class="container container--contact">
-        <div class="section-title section-title--fill font-script">contact</div>
+        <div class="section-title section-title--fill font-script" data-i18n="section-contact">contact</div>
 
         <form class="contact-form" id="contactForm" novalidate>
           <section class="container container--form">
@@ -215,6 +216,11 @@
     </div>
 
   </main>
+
+  <div class="lang-row">
+    <button class="lang-btn active" data-lang="en">english</button>
+    <button class="lang-btn" data-lang="it">italiano</button>
+  </div>
 
 </body>
 </html>

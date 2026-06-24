@@ -1,12 +1,13 @@
 @use 'mixins' as *;
 
 .lang-row {
-  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
   display: flex;
   align-items: center;
   gap: 6px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .lang-btn {
