@@ -147,11 +147,14 @@
               Immersive website for a burger restaurant in Rimini. Full-screen video hero and scroll-driven animations.
             </div>
             <div class="project-row__image-wrap">
-              <img
-                alt="Jimmis preview"
-                src="/images/jimmis.jpg"
-                class="project-row__image"
-              />
+              <video
+              loop autoplay muted playsinline
+              poster="/images/jimmis.jpg"
+              class="project-row__video"
+              onerror="this.style.display='none'"
+            >
+              <source src="/videos/jimmis-site.mp4" type="video/mp4" />
+            </video>
             </div>
           </div>
 
