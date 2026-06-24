@@ -55,27 +55,37 @@ function initLangSwitcher(): void {
   })
 }
 
+declare const emailjs: {
+  sendForm(serviceId: string, templateId: string, form: HTMLFormElement): Promise<unknown>
+}
+
 function initContactForm(): void {
   const form = document.getElementById('contactForm') as HTMLFormElement | null
   const thanks = document.getElementById('formThanks') as HTMLElement | null
+  const timeInput = document.getElementById('formTime') as HTMLInputElement | null
   if (!form || !thanks) return
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault()
-    const name    = (form.elements.namedItem('name')    as HTMLInputElement).value.trim()
-    const email   = (form.elements.namedItem('email')   as HTMLInputElement).value.trim()
-    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim()
+    const name    = (form.elements.namedItem('name') as HTMLInputElement).value.trim()
+    const email   = (form.elements.namedItem('email')     as HTMLInputElement).value.trim()
+    const message = (form.elements.namedItem('message')   as HTMLTextAreaElement).value.trim()
     if (!name || !email || !message) return
 
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`)
-    const body    = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`)
-    window.location.href = `mailto:roccangi@gmail.com?subject=${subject}&body=${body}`
+    if (timeInput) {
+      timeInput.value = new Date().toLocaleString('it-IT', { dateStyle: 'short', timeStyle: 'short' })
+    }
 
-    form.reset()
-    thanks.hidden = false
-    const strings = i18n[currentLang] ?? i18n['en']
-    thanks.textContent = strings['thanks'] ?? 'THANK YOU'
-    setTimeout(() => { thanks.hidden = true }, 5000)
+    try {
+      await emailjs.sendForm('service_b0ffsq9', 'template_3syfrvh', form)
+      form.reset()
+      thanks.hidden = false
+      const strings = i18n[currentLang] ?? i18n['en']
+      thanks.textContent = strings['thanks'] ?? 'THANK YOU'
+      setTimeout(() => { thanks.hidden = true }, 5000)
+    } catch {
+      alert('Message could not be sent. Please try again.')
+    }
   })
 }
 
