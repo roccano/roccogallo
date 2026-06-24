@@ -1,0 +1,19 @@
+@use 'mixins' as *;
+
+.listening-card {
+  box-shadow: var(--shadow);
+  font-style: italic;
+  width: fit-content;
+  background-color: #fff;
+  margin: 20px auto;
+  padding: var(--sp-1) 15px;
+  line-height: 1;
+  font-size: var(--fs-1);
+  position: relative;
+
+  @include mobile { padding-left: 6px; padding-right: 6px; margin-bottom: var(--sp-1); }
+
+  &__label  { font-size: 14px; }
+  &__track  { word-break: break-all; margin-right: 8px; }
+  &__artist {}
+}

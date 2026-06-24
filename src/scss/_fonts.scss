@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'PinyonScript';
+  src: url('/fonts/pinyon-script.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Authentic';
+  src: url('/fonts/authentic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Redaction';
+  src: url('/fonts/redaction-italic.woff2') format('woff2');
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Jabin';
+  src: url('/fonts/jabin.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Xanh';
+  src: url('/fonts/xanh.woff2') format('woff2');
+  font-display: swap;
+}
+
+.font-script    { font-family: 'PinyonScript', cursive; font-weight: 400; font-style: normal; }
+.font-authentic { font-family: 'Authentic', serif; }
+.font-redaction { font-family: 'Redaction', serif; font-style: italic; }
+.font-jabin     { font-family: 'Jabin', sans-serif; }
+.font-italic    { font-style: italic; }

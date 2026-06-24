@@ -1,0 +1,4 @@
+@use 'mixins' as *;
+
+@include mobile   { .desktop { display: none; } }
+@include tablet-up { .mobile  { display: none; } }

@@ -1,0 +1,29 @@
+@use 'mixins' as *;
+
+.link-hover {
+  color: inherit;
+  text-decoration: underline;
+  white-space: nowrap;
+
+  @include can-hover { &:hover { background: black; color: white; } }
+
+  &--inline {
+    color: inherit;
+    text-decoration: underline;
+
+    @include can-hover { &:hover { background: black; color: white; } }
+  }
+}
+
+.link-underline {
+  text-decoration: underline;
+  color: inherit;
+
+  @include can-hover { &:hover { background: black; color: white; } }
+
+  &--white {
+    background: white;
+    padding: 3px;
+    border-radius: 10px;
+  }
+}

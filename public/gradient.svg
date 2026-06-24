@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1878 1332">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Sfumatura_senza_nome_66);
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+    </style>
+    <radialGradient id="Sfumatura_senza_nome_66" data-name="Sfumatura senza nome 66" cx="789.9" cy="693.2" fx="789.9" fy="693.2" r="1" gradientTransform="translate(2882612.2 587098.4) rotate(-90) scale(742.5 -4157.1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cecece"/>
+      <stop offset=".2" stop-color="#737373" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#cecece"/>
+      <stop offset=".6" stop-color="#bababa" stop-opacity=".7"/>
+      <stop offset=".8" stop-color="#ff8efe" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#0015ff" stop-opacity=".5"/>
+    </radialGradient>
+  </defs>
+  <path class="st1" d="M1878,1332H0V1h1878v1331Z"/>
+  <path class="st0" d="M1878,1332H0V0h1878v1332Z"/>
+</svg>

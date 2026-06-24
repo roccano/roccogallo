@@ -1,0 +1,5 @@
+@mixin mobile         { @media (max-width: 639px)                  { @content; } }
+@mixin tablet-up      { @media (min-width: 640px)                   { @content; } }
+@mixin desktop-up     { @media (min-width: 1024px)                  { @content; } }
+@mixin can-hover      { @media (hover: hover)                       { @content; } }
+@mixin reduced-motion { @media (prefers-reduced-motion: reduce)     { @content; } }

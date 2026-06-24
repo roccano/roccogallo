@@ -1,0 +1,14 @@
+$bp-max-mobile: 639px;
+$bp-min-tablet: 640px;
+$bp-min-desktop: 1024px;
+
+:root {
+  --shadow: rgb(255 142 254 / 58%) 0px 0px 20px inset;
+  --bg-color: #d3d3d37d;
+  --fs-0: 12px; --fs-1: 16px; --fs-2: 18px; --fs-3: 24px;
+  --fs-4: 36px; --fs-5: 46px; --fs-6: 56px; --fs-7: 66px;
+  --fs-8: 76px; --fs-9: 86px; --fs-10: 106px;
+  --container: 1200px;
+  --sp-0: 5px; --sp-1: 10px; --sp-2: 20px; --sp-3: 30px;
+  --sp-4: 40px; --sp-5: 50px; --sp-6: 60px; --sp-7: 70px;
+}

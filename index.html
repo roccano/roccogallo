@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>𝓻𝓸𝓬𝓬𝓸 𝓰𝓪𝓵𝓵𝓸</title>
+
+  <link rel="stylesheet" href="/src/style.scss" />
+
+  <link rel="preload" href="/gradient.svg" as="image" />
+  <link rel="preload" href="/icons/star-wink.svg" as="image" />
+
+  <meta name="description" content="Rocco Gallo is a creative developer. He likes building things on the internet." />
+  <meta property="og:title" content="𝓻𝓸𝓬𝓬𝓸 𝓰𝓪𝓵𝓵𝓸" />
+  <meta property="og:description" content="Rocco Gallo is a creative developer. He likes building things on the internet." />
+  <meta property="og:type" content="website" />
+
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+
+  <!-- fixed colored border frame -->
+  <div class="frame-border"></div>
+
+  <!-- blur overlay (fades out on load) -->
+  <div class="blur-overlay" id="blurOverlay"></div>
+
+  <main class="main">
+
+    <!-- ── HERO SECTION ── -->
+    <section class="container container--narrow">
+
+      <!-- sticky giant name -->
+      <h1 class="site-name font-script">Rocco Gallo</h1>
+
+      <div class="hero-content">
+        <!-- subtle second overlay inside hero -->
+        <div class="blur-overlay blur-overlay--inner"></div>
+
+        <span class="bio font-authentic">
+          <div class="bio__text">
+            <span class="bio__spacer"></span><span class="bio__spacer"></span><span class="bio__spacer"></span>
+            Creative developer based in <span class="bio__city font-jabin">Milano</span>.
+            I'm building immersive digital experiences at
+            <a href="https://websolute.com/" target="_blank" rel="noopener noreferrer" class="link-hover">Websolute</a>.
+            I like creating things that live between design and code. I usually goes by
+            <span class="font-redaction font-italic">roccano</span>.
+          </div>
+        </span>
+
+      
+      </div>
+
+      <!-- portrait photo placeholder -->
+      <img
+        alt="Rocco Gallo"
+        src="/images/portrait.jpg"
+        class="portrait"
+        onerror="this.style.display='none'"
+      />
+
+    </section>
+
+    <!-- ── WEBSITES SECTION ── -->
+    <div class="websites-wrap">
+
+      <div class="section-title font-script">websites</div>
+
+      <!-- Project 1 — video left, text right (row-reverse) -->
+      <div class="project-row project-row--reverse">
+        <video
+          loop autoplay muted playsinline
+          poster="/images/project1.jpg"
+          class="project-row__video"
+          onerror="this.style.display='none'"
+        >
+          <source src="/videos/dececco.mp4" type="video/mp4" />
+        </video>
+        <div class="project-row__text">
+          <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://dececco.com/">
+            De Cecco
+          </a>
+          <div class="project-row__desc font-authentic">
+            Institutional website redesign. The product becomes both starting point and destination, concentrating the brand's entire narrative and value system in a single, continuous experience.
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 — video right, text left -->
+      <div class="project-row">
+        <video
+          loop autoplay muted playsinline
+          poster="/images/project2.jpg"
+          class="project-row__video"
+          onerror="this.style.display='none'"
+        >
+          <source src="/videos/alerion.mp4" type="video/mp4" />
+        </video>
+        <div class="project-row__text">
+          <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://alerion.it/">
+            Alerion
+          </a>
+          <div class="project-row__desc font-authentic">
+            A new digital identity for a leading Italian private aviation company. Built to surface information clearly, reinforce content credibility, and put the projects front and center.
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 — centered -->
+      <section class="container container--wide">
+        <div class="project-row--centered">
+          <a class="project-row__title font-authentic link-underline" target="_blank" rel="noreferrer" href="https://www.oasy.com/it/">
+            Oasy
+          </a>
+          <div class="project-row__desc font-authentic">
+            Frontend development for the new website of an Italian petfood brand. Product-focused layouts with smooth scroll interactions and refined responsive design.
+          </div>
+        </div>
+
+        <!-- Project 4 — styled box with green radial bg -->
+        <div class="project-row--column font-authentic">
+          <div class="project-row__box project-row__box--green">
+            <a target="_blank" rel="noreferrer" href="https://circolino-rimini.vercel.app/" class="project-row__title link-underline link-underline--white">
+              circolino-rimini
+            </a>
+            <div class="project-row__desc project-row__desc--centered">
+              Restaurant website with immersive video hero, shader-based scroll effects. Sub-2s load time.
+            </div>
+          </div>
+
+          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
+            roccano.it
+          </a>
+          <div class="project-row__desc">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
+
+
+          <div class="project-row__box project-row__box--orange">
+            <a target="_blank" rel="noreferrer" href="https://jimmis.vercel.app/" class="project-row__title link-underline link-underline--white">
+              Jimmis
+            </a>
+            <div class="project-row__desc project-row__desc--centered">
+              Immersive website for a burger restaurant in Rimini. Full-screen video hero and scroll-driven animations.
+            </div>
+            <div class="project-row__image-wrap">
+              <img
+                alt="Jimmis preview"
+                src="/images/jimmis.jpg"
+                class="project-row__image"
+              />
+            </div>
+          </div>
+
+
+
+          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
+            roccano.it
+          </a>
+          <div class="project-row__desc">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
+          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
+            WEBSITE
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ── CONTACT SECTION ── -->
+    <div class="contact-wrap">
+      <section class="container container--contact">
+        <div class="section-title section-title--fill font-script">contact</div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <section class="container container--form">
+            <label class="contact-form__field">
+              <span class="contact-form__label font-authentic" data-i18n="name">name</span>
+              <input class="contact-form__input font-authentic" type="text" required id="name" name="name" />
+            </label>
+            <label class="contact-form__field">
+              <span class="contact-form__label font-authentic" data-i18n="email">email</span>
+              <input class="contact-form__input font-authentic" type="email" required id="email" name="email" />
+            </label>
+            <label class="contact-form__field">
+              <span class="contact-form__label font-authentic" data-i18n="message">message</span>
+              <textarea class="contact-form__input contact-form__textarea font-authentic" required id="message" name="message"></textarea>
+            </label>
+            <button type="submit" class="contact-form__submit font-redaction" data-i18n="submit">submit</button>
+            <p class="contact-form__thanks font-redaction" id="formThanks" hidden>THANK YOU</p>
+          </section>
+        </form>
+      </section>
+
+      <!-- bottom star card -->
+      <div class="bottom-card font-redaction">
+        <img alt="" width="20" height="20" class="star-corner star-corner--tl" src="/icons/star-wink.svg" />
+        <img alt="" width="20" height="20" class="star-corner star-corner--tr" src="/icons/star-wink.svg" />
+        <img alt="" width="20" height="20" class="star-corner star-corner--bl" src="/icons/star-wink.svg" />
+        <img alt="" width="20" height="20" class="star-corner star-corner--br" src="/icons/star-wink.svg" />
+        <nav class="bottom-card__socials" aria-label="social links">
+          <div class="bottom-card__track">
+            <div class="bottom-card__group">
+              <a class="link-hover" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/roccano">Instagram</a>
+              <a class="link-hover" target="_blank" rel="noopener noreferrer" href="https://x.com/roccano">X</a>
+              <a class="link-hover" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/roccano">LinkedIn</a>
+              <a class="link-hover" target="_blank" rel="noopener noreferrer" href="https://github.com/roccano">Github</a>
+            </div>
+            <div class="bottom-card__group" aria-hidden="true">
+              <a class="link-hover" tabindex="-1" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/roccano">Instagram</a>
+              <a class="link-hover" tabindex="-1" target="_blank" rel="noopener noreferrer" href="https://x.com/roccano">X</a>
+              <a class="link-hover" tabindex="-1" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/roccano">LinkedIn</a>
+              <a class="link-hover" tabindex="-1" target="_blank" rel="noopener noreferrer" href="https://github.com/roccano">Github</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

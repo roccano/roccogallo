@@ -1,0 +1,13 @@
+@use 'mixins' as *;
+
+.section-title {
+  font-size: 45px;
+  display: inline-block;
+
+  @include tablet-up { font-size: 100px; }
+
+  &--fill {
+    width: -webkit-fill-available;
+    position: relative;
+  }
+}
