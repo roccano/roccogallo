@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>𝓻𝓸𝓬𝓬𝓸 𝓰𝓪𝓵𝓵𝓸</title>
 
   <link rel="stylesheet" href="/src/style.scss" />
@@ -32,7 +32,7 @@
   <main class="main">
 
     <!-- ── HERO SECTION ── -->
-    <section class="container container--narrow">
+    <section class="container">
 
       <!-- sticky giant name -->
       <h1 class="site-name font-script">Rocco Gallo</h1>
@@ -163,12 +163,6 @@
             </div>
           </div>
 
-          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
-            roccano.it
-          </a>
-          <div class="project-row__desc" data-i18n="desc-roccano">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
-
-
           <div class="project-row__box project-row__box--orange">
             <a target="_blank" rel="noreferrer" href="https://jimmis.vercel.app/" class="project-row__title link-underline link-underline--white">
               Jimmis
@@ -190,13 +184,6 @@
 
 
 
-          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
-            roccano.it
-          </a>
-          <div class="project-row__desc" data-i18n="desc-roccano">Personal artist portfolio powered by the objkt API. Browse my NFT works, collections, collectors, and a live minting feed.</div>
-          <a target="_blank" rel="noreferrer" href="https://roccano.it" class="project-row__title link-underline">
-            WEBSITE
-          </a>
         </div>
       </section>
 
@@ -257,8 +244,8 @@
   </main>
 
   <div class="lang-row">
-    <button class="lang-btn active" data-lang="en">english</button>
-    <button class="lang-btn" data-lang="it">italiano</button>
+    <button class="lang-btn active" data-lang="en" aria-label="Select English language" aria-pressed="true">english</button>
+    <button class="lang-btn" data-lang="it" aria-label="Seleziona lingua italiana" aria-pressed="false">italiano</button>
   </div>
 
 </body>

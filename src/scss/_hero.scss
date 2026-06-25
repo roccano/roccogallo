@@ -14,11 +14,14 @@
   display: inline-block;
   text-align: justify;
 
+  @include mobile { text-align: center; }
+
   &__text {
-    font-size: 20px;
+    font-size: 16px;
     max-width: 640px;
 
-    @include tablet-up { font-size: 27px; }
+    @include tablet-up { font-size: 20px; }
+    @include desktop-up { font-size: 27px; }
   }
 
   &__spacer {

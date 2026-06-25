@@ -26,17 +26,15 @@
 
   &__input {
     border: 1px dashed black;
-    align-self: flex-start;
     padding: 4px 8px;
     font-size: var(--fs-2);
     background: unset;
-    min-width: 250px;
     outline: 0;
 
     &:focus-visible { outline: black auto 4px; }
 
-    @include mobile  { width: -webkit-fill-available; }
-    @include tablet-up { min-width: 400px; }
+    @include mobile  { width: 100%; align-self: stretch; }
+    @include tablet-up { min-width: 400px; align-self: flex-start; }
   }
 
   &__textarea {

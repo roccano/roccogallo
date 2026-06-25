@@ -3,6 +3,7 @@
 html, body {
   color: #000;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body::before {

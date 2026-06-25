@@ -42,7 +42,9 @@ function applyLang(lang: string): void {
     if (strings[key]) el.textContent = strings[key]
   })
   document.querySelectorAll<HTMLButtonElement>('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang)
+    const isActive = btn.dataset.lang === lang
+    btn.classList.toggle('active', isActive)
+    btn.setAttribute('aria-pressed', String(isActive))
   })
 }
 

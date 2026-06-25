@@ -40,9 +40,7 @@
       &:hover { animation-play-state: paused; }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      animation: none;
-    }
+    @include reduced-motion { animation: none; }
   }
 
   &__group {

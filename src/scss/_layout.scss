@@ -11,6 +11,7 @@
 }
 
 .container {
+  width: 100%;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -19,7 +20,6 @@
 
   @include mobile { padding-left: var(--sp-2); padding-right: var(--sp-2); }
 
-  &--narrow { max-width: 900px; margin-left: auto; margin-right: auto; }
   &--wide   { max-width: var(--container); }
 
   &--contact {

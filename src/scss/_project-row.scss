@@ -116,7 +116,7 @@
 
     img {
       object-fit: contain;
-      width: -webkit-fill-available;
+      width: 100%;
       margin-bottom: var(--sp-1);
       filter: drop-shadow(#f4bbff 0px 0px 10px);
       position: absolute;
